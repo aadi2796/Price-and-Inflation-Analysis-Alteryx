@@ -1,0 +1,463 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2022.3">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="102" y="66" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">C:\Users\Owner\OneDrive\Documents\Alteryx Datathon\Data\Unemployment\ln.data.1.AllData.txt</File>
+          <FormatSpecificOptions>
+            <HeaderRow>True</HeaderRow>
+            <IgnoreErrors>False</IgnoreErrors>
+            <AllowShareWrite>False</AllowShareWrite>
+            <ImportLine>1</ImportLine>
+            <FieldLen>254</FieldLen>
+            <SingleThreadRead>False</SingleThreadRead>
+            <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+            <Delimeter>\t</Delimeter>
+            <QuoteRecordBreak>False</QuoteRecordBreak>
+            <CodePage>28591</CodePage>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>ln.data.1.AllData.txt</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="series_id" size="254" source="File: C:\Users\Owner\OneDrive\Documents\Alteryx Datathon\Data\Unemployment\ln.data.1.AllData.txt" type="V_String" />
+            <Field name="year" size="254" source="File: C:\Users\Owner\OneDrive\Documents\Alteryx Datathon\Data\Unemployment\ln.data.1.AllData.txt" type="V_String" />
+            <Field name="period" size="254" source="File: C:\Users\Owner\OneDrive\Documents\Alteryx Datathon\Data\Unemployment\ln.data.1.AllData.txt" type="V_String" />
+            <Field name="value" size="254" source="File: C:\Users\Owner\OneDrive\Documents\Alteryx Datathon\Data\Unemployment\ln.data.1.AllData.txt" type="V_String" />
+            <Field name="footnote_codes" size="254" source="File: C:\Users\Owner\OneDrive\Documents\Alteryx Datathon\Data\Unemployment\ln.data.1.AllData.txt" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="246" y="66" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="value" selected="True" type="Float" size="4" />
+            <SelectField field="footnote_codes" selected="False" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="114" y="186" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">C:\Users\Owner\OneDrive\Documents\Alteryx Datathon\Data\Unemployment\ln.series.txt</File>
+          <FormatSpecificOptions>
+            <HeaderRow>True</HeaderRow>
+            <IgnoreErrors>False</IgnoreErrors>
+            <AllowShareWrite>False</AllowShareWrite>
+            <ImportLine>1</ImportLine>
+            <FieldLen>254</FieldLen>
+            <SingleThreadRead>False</SingleThreadRead>
+            <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+            <Delimeter>\t</Delimeter>
+            <QuoteRecordBreak>False</QuoteRecordBreak>
+            <CodePage>28591</CodePage>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>ln.series.txt</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="series_id" size="254" source="File: C:\Users\Owner\OneDrive\Documents\Alteryx Datathon\Data\Unemployment\ln.series.txt" type="V_String" />
+            <Field name="lfst_code" size="254" source="File: C:\Users\Owner\OneDrive\Documents\Alteryx Datathon\Data\Unemployment\ln.series.txt" type="V_String" />
+            <Field name="periodicity_code" size="254" source="File: C:\Users\Owner\OneDrive\Documents\Alteryx Datathon\Data\Unemployment\ln.series.txt" type="V_String" />
+            <Field name="series_title" size="254" source="File: C:\Users\Owner\OneDrive\Documents\Alteryx Datathon\Data\Unemployment\ln.series.txt" type="V_String" />
+            <Field name="absn_code" size="254" source="File: C:\Users\Owner\OneDrive\Documents\Alteryx Datathon\Data\Unemployment\ln.series.txt" type="V_String" />
+            <Field name="activity_code" size="254" source="File: C:\Users\Owner\OneDrive\Documents\Alteryx Datathon\Data\Unemployment\ln.series.txt" type="V_String" />
+            <Field name="ages_code" size="254" source="File: C:\Users\Owner\OneDrive\Documents\Alteryx Datathon\Data\Unemployment\ln.series.txt" type="V_String" />
+            <Field name="cert_code" size="254" source="File: C:\Users\Owner\OneDrive\Documents\Alteryx Datathon\Data\Unemployment\ln.series.txt" type="V_String" />
+            <Field name="class_code" size="254" source="File: C:\Users\Owner\OneDrive\Documents\Alteryx Datathon\Data\Unemployment\ln.series.txt" type="V_String" />
+            <Field name="duration_code" size="254" source="File: C:\Users\Owner\OneDrive\Documents\Alteryx Datathon\Data\Unemployment\ln.series.txt" type="V_String" />
+            <Field name="education_code" size="254" source="File: C:\Users\Owner\OneDrive\Documents\Alteryx Datathon\Data\Unemployment\ln.series.txt" type="V_String" />
+            <Field name="entr_code" size="254" source="File: C:\Users\Owner\OneDrive\Documents\Alteryx Datathon\Data\Unemployment\ln.series.txt" type="V_String" />
+            <Field name="expr_code" size="254" source="File: C:\Users\Owner\OneDrive\Documents\Alteryx Datathon\Data\Unemployment\ln.series.txt" type="V_String" />
+            <Field name="hheader_code" size="254" source="File: C:\Users\Owner\OneDrive\Documents\Alteryx Datathon\Data\Unemployment\ln.series.txt" type="V_String" />
+            <Field name="hour_code" size="254" source="File: C:\Users\Owner\OneDrive\Documents\Alteryx Datathon\Data\Unemployment\ln.series.txt" type="V_String" />
+            <Field name="indy_code" size="254" source="File: C:\Users\Owner\OneDrive\Documents\Alteryx Datathon\Data\Unemployment\ln.series.txt" type="V_String" />
+            <Field name="jdes_code" size="254" source="File: C:\Users\Owner\OneDrive\Documents\Alteryx Datathon\Data\Unemployment\ln.series.txt" type="V_String" />
+            <Field name="look_code" size="254" source="File: C:\Users\Owner\OneDrive\Documents\Alteryx Datathon\Data\Unemployment\ln.series.txt" type="V_String" />
+            <Field name="mari_code" size="254" source="File: C:\Users\Owner\OneDrive\Documents\Alteryx Datathon\Data\Unemployment\ln.series.txt" type="V_String" />
+            <Field name="mjhs_code" size="254" source="File: C:\Users\Owner\OneDrive\Documents\Alteryx Datathon\Data\Unemployment\ln.series.txt" type="V_String" />
+            <Field name="occupation_code" size="254" source="File: C:\Users\Owner\OneDrive\Documents\Alteryx Datathon\Data\Unemployment\ln.series.txt" type="V_String" />
+            <Field name="orig_code" size="254" source="File: C:\Users\Owner\OneDrive\Documents\Alteryx Datathon\Data\Unemployment\ln.series.txt" type="V_String" />
+            <Field name="pcts_code" size="254" source="File: C:\Users\Owner\OneDrive\Documents\Alteryx Datathon\Data\Unemployment\ln.series.txt" type="V_String" />
+            <Field name="race_code" size="254" source="File: C:\Users\Owner\OneDrive\Documents\Alteryx Datathon\Data\Unemployment\ln.series.txt" type="V_String" />
+            <Field name="rjnw_code" size="254" source="File: C:\Users\Owner\OneDrive\Documents\Alteryx Datathon\Data\Unemployment\ln.series.txt" type="V_String" />
+            <Field name="rnlf_code" size="254" source="File: C:\Users\Owner\OneDrive\Documents\Alteryx Datathon\Data\Unemployment\ln.series.txt" type="V_String" />
+            <Field name="rwns_code" size="254" source="File: C:\Users\Owner\OneDrive\Documents\Alteryx Datathon\Data\Unemployment\ln.series.txt" type="V_String" />
+            <Field name="seek_code" size="254" source="File: C:\Users\Owner\OneDrive\Documents\Alteryx Datathon\Data\Unemployment\ln.series.txt" type="V_String" />
+            <Field name="sexs_code" size="254" source="File: C:\Users\Owner\OneDrive\Documents\Alteryx Datathon\Data\Unemployment\ln.series.txt" type="V_String" />
+            <Field name="tdat_code" size="254" source="File: C:\Users\Owner\OneDrive\Documents\Alteryx Datathon\Data\Unemployment\ln.series.txt" type="V_String" />
+            <Field name="vets_code" size="254" source="File: C:\Users\Owner\OneDrive\Documents\Alteryx Datathon\Data\Unemployment\ln.series.txt" type="V_String" />
+            <Field name="wkst_code" size="254" source="File: C:\Users\Owner\OneDrive\Documents\Alteryx Datathon\Data\Unemployment\ln.series.txt" type="V_String" />
+            <Field name="born_code" size="254" source="File: C:\Users\Owner\OneDrive\Documents\Alteryx Datathon\Data\Unemployment\ln.series.txt" type="V_String" />
+            <Field name="chld_code" size="254" source="File: C:\Users\Owner\OneDrive\Documents\Alteryx Datathon\Data\Unemployment\ln.series.txt" type="V_String" />
+            <Field name="disa_code" size="254" source="File: C:\Users\Owner\OneDrive\Documents\Alteryx Datathon\Data\Unemployment\ln.series.txt" type="V_String" />
+            <Field name="seasonal" size="254" source="File: C:\Users\Owner\OneDrive\Documents\Alteryx Datathon\Data\Unemployment\ln.series.txt" type="V_String" />
+            <Field name="footnote_codes" size="254" source="File: C:\Users\Owner\OneDrive\Documents\Alteryx Datathon\Data\Unemployment\ln.series.txt" type="V_String" />
+            <Field name="begin_year" size="254" source="File: C:\Users\Owner\OneDrive\Documents\Alteryx Datathon\Data\Unemployment\ln.series.txt" type="V_String" />
+            <Field name="begin_period" size="254" source="File: C:\Users\Owner\OneDrive\Documents\Alteryx Datathon\Data\Unemployment\ln.series.txt" type="V_String" />
+            <Field name="end_year" size="254" source="File: C:\Users\Owner\OneDrive\Documents\Alteryx Datathon\Data\Unemployment\ln.series.txt" type="V_String" />
+            <Field name="end_period" size="254" source="File: C:\Users\Owner\OneDrive\Documents\Alteryx Datathon\Data\Unemployment\ln.series.txt" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="126" y="282" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">C:\Users\Owner\OneDrive\Documents\Alteryx Datathon\Data\Unemployment\ln.occupation.txt</File>
+          <FormatSpecificOptions>
+            <HeaderRow>True</HeaderRow>
+            <IgnoreErrors>False</IgnoreErrors>
+            <AllowShareWrite>False</AllowShareWrite>
+            <ImportLine>1</ImportLine>
+            <FieldLen>254</FieldLen>
+            <SingleThreadRead>False</SingleThreadRead>
+            <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+            <Delimeter>\t</Delimeter>
+            <QuoteRecordBreak>False</QuoteRecordBreak>
+            <CodePage>28591</CodePage>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>ln.occupation.txt</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="occupation_code" size="254" source="File: C:\Users\Owner\OneDrive\Documents\Alteryx Datathon\Data\Unemployment\ln.occupation.txt" type="V_String" />
+            <Field name="occupation_text" size="254" source="File: C:\Users\Owner\OneDrive\Documents\Alteryx Datathon\Data\Unemployment\ln.occupation.txt" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="6">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="390" y="126" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="series_id" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="series_id" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Right_series_id" selected="False" rename="Right_series_id" input="Right_" />
+                <SelectField field="Right_periodicity_code" selected="False" input="Right_" />
+                <SelectField field="Right_series_title" selected="False" input="Right_" />
+                <SelectField field="Right_absn_code" selected="False" input="Right_" />
+                <SelectField field="Right_activity_code" selected="False" input="Right_" />
+                <SelectField field="Right_ages_code" selected="False" input="Right_" />
+                <SelectField field="Right_cert_code" selected="False" input="Right_" />
+                <SelectField field="Right_class_code" selected="False" input="Right_" />
+                <SelectField field="Right_duration_code" selected="False" input="Right_" />
+                <SelectField field="Right_education_code" selected="False" input="Right_" />
+                <SelectField field="Right_entr_code" selected="False" input="Right_" />
+                <SelectField field="Right_expr_code" selected="False" input="Right_" />
+                <SelectField field="Right_hheader_code" selected="False" input="Right_" />
+                <SelectField field="Right_hour_code" selected="False" input="Right_" />
+                <SelectField field="Right_indy_code" selected="False" input="Right_" />
+                <SelectField field="Right_jdes_code" selected="False" input="Right_" />
+                <SelectField field="Right_look_code" selected="False" input="Right_" />
+                <SelectField field="Right_mari_code" selected="False" input="Right_" />
+                <SelectField field="Right_mjhs_code" selected="False" input="Right_" />
+                <SelectField field="Right_orig_code" selected="False" input="Right_" />
+                <SelectField field="Right_pcts_code" selected="False" input="Right_" />
+                <SelectField field="Right_race_code" selected="False" input="Right_" />
+                <SelectField field="Right_rjnw_code" selected="False" input="Right_" />
+                <SelectField field="Right_rnlf_code" selected="False" input="Right_" />
+                <SelectField field="Right_rwns_code" selected="False" input="Right_" />
+                <SelectField field="Right_seek_code" selected="False" input="Right_" />
+                <SelectField field="Right_sexs_code" selected="False" input="Right_" />
+                <SelectField field="Right_tdat_code" selected="False" input="Right_" />
+                <SelectField field="Right_vets_code" selected="False" input="Right_" />
+                <SelectField field="Right_wkst_code" selected="False" input="Right_" />
+                <SelectField field="Right_born_code" selected="False" input="Right_" />
+                <SelectField field="Right_chld_code" selected="False" input="Right_" />
+                <SelectField field="Right_disa_code" selected="False" input="Right_" />
+                <SelectField field="Right_seasonal" selected="False" input="Right_" />
+                <SelectField field="Right_footnote_codes" selected="False" input="Right_" />
+                <SelectField field="Right_begin_year" selected="False" input="Right_" />
+                <SelectField field="Right_begin_period" selected="False" input="Right_" />
+                <SelectField field="Right_end_year" selected="False" input="Right_" />
+                <SelectField field="Right_end_period" selected="False" input="Right_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="7">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="522" y="138" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="occupation_code" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="occupation_code" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Right_occupation_code" selected="False" rename="Right_occupation_code" input="Right_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="12">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="822" y="126" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="occupation_text" action="GroupBy" rename="occupation_text" />
+            <SummarizeField field="year" action="GroupBy" rename="year" />
+            <SummarizeField field="value" action="Avg" rename="Avg_value" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="13">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="1062" y="126" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File MaxRecords="" FileFormat="25">C:\Users\Owner\OneDrive\Documents\Alteryx Datathon\Data\Unemployment\unemplyment.xlsx|||Sheet1</File>
+          <Passwords />
+          <Disable>False</Disable>
+          <FormatSpecificOptions>
+            <PreserveFormat>False</PreserveFormat>
+            <SkipFieldNames>False</SkipFieldNames>
+            <OutputOption>Overwrite</OutputOption>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>unemplyment.xlsx
+Query=Sheet1</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+    <Node ToolID="15">
+      <GuiSettings>
+        <Position x="714" y="126" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="Check Box (135)">False</Value>
+          <Value name="Check Box (136)">False</Value>
+          <Value name="List Box (11)">""</Value>
+          <Value name="Check Box (84)">True</Value>
+          <Value name="Check Box (117)">True</Value>
+          <Value name="Check Box (15)">True</Value>
+          <Value name="Check Box (109)">False</Value>
+          <Value name="Check Box (122)">False</Value>
+          <Value name="Check Box (53)">False</Value>
+          <Value name="Check Box (58)">False</Value>
+          <Value name="Check Box (70)">False</Value>
+          <Value name="Check Box (77)">False</Value>
+          <Value name="Drop Down (81)">upper</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings Macro="Cleanse.yxmc" />
+    </Node>
+    <Node ToolID="16">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
+        <Position x="954" y="126" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SortInfo locale="1033">
+            <Field field="year" order="Ascending" />
+          </SortInfo>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>year - Ascending</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSort" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="2" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="6" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="6" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Output" />
+      <Destination ToolID="7" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="Join" />
+      <Destination ToolID="7" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="Join" />
+      <Destination ToolID="15" Connection="Input2" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="12" Connection="Output" />
+      <Destination ToolID="16" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="15" Connection="Output26" />
+      <Destination ToolID="12" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="16" Connection="Output" />
+      <Destination ToolID="13" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <RunWithE2 value="True" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>Unemployment</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="08f238c3-dd8a-4302-943f-47aa0c4fca9c" />
+      <Telemetry>
+        <PreviousWorkflowId value="ee41b215-fae9-4210-b97c-d1bb88af1925" />
+        <OriginWorkflowId value="ee41b215-fae9-4210-b97c-d1bb88af1925" />
+      </Telemetry>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>
